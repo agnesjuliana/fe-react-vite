@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 export default function Navbar() {
   const itemNav = [
     {
@@ -5,12 +7,12 @@ export default function Navbar() {
       link: "/",
     },
     {
-      name: "Course",
-      link: "/course",
+      name: "Contact",
+      link: "/contact",
     },
     {
-      name: "About Us",
-      link: "/about-us",
+      name: "About",
+      link: "/about",
     },
   ];
   return (
@@ -55,7 +57,7 @@ export default function Navbar() {
             {itemNav.map((item, index) => {
               return (
                 <li key={index}>
-                  <a href={item.link}>{item.name}</a>
+                  <NavLink to={item.link}>{item.name}</NavLink>
                 </li>
               );
             })}
