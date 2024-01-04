@@ -8,6 +8,7 @@ import Card from './components/molecules/Card'
 import Home from './components/pages/Home'
 import About from './components/pages/About'
 import Contact from './components/pages/Contact'
+import Product from './components/pages/Product'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route exact path='/' element={<Home/>}></Route>
           <Route path='/contact' element={<Contact/>}></Route>
           <Route path='/about' element={<About/>}></Route>
+          <Route path='/product' element={<Product/>}></Route>
         </Routes>
       </div>
       {/* <Greet name="Dian" usia="10" />

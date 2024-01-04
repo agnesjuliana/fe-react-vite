@@ -14,6 +14,10 @@ export default function Navbar() {
       name: "About",
       link: "/about",
     },
+    {
+      name: "Product",
+      link: "/product",
+    },
   ];
   return (
     <>
